@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Mahajan | Full Stack Java Engineer & Computer Engineering Graduate</title>
+  <meta name="description" content="Portfolio of Sahil Mahajan - Computer Engineering graduate & Full Stack Java Developer specializing in Java, Spring Boot, Hibernate, WebSockets, React.js, and SQL database systems.">
+  <meta name="keywords" content="Sahil Mahajan, Java Developer, Spring Boot, Hibernate, WebSockets, React.js, MySQL, Full Stack Java, Computer Engineering, Pune">
+  <meta name="author" content="Sahil Mahajan">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Interactive Ambient Background Glow & Particles -->
+  <div class="ambient-light cursor-glow" id="cursorGlow"></div>
+  <div class="grid-backdrop"></div>
+  <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+  <!-- Sticky Glassmorphic Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-scroll-progress" id="scrollProgressBar"></div>
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">SahilMahajan</span>
+        <span class="logo-slash">/&gt;</span>
+        <span class="status-dot" title="Available for Java & Full Stack Opportunities"></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-graduate"></i> Profile</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-cubes"></i> Projects</a></li>
+          <li><a href="#architecture" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Architecture Flow</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+          <li><a href="#education" class="nav-link"><i class="fa-solid fa-award"></i> Education & Certs</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-terminal"></i> Connect</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Sahil192210" target="_blank" rel="noopener" class="nav-icon-btn" aria-label="GitHub Profile" title="GitHub: Sahil192210">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sahil-mahajan-3b5302283" target="_blank" rel="noopener" class="nav-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn: Sahil Mahajan">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline glow-effect">
+          <span>Get in Touch</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge slide-up">
+            <span class="pulse-indicator"></span>
+            <span>📍 Pune, Maharashtra | Open to Opportunities</span>
+          </div>
+
+          <h1 class="hero-title slide-up delay-1">
+            Hi, I'm <span class="gradient-text neon-text">Sahil Mahajan</span>
+            <br>
+            <span class="typewriter-container">
+              <span id="typewriter"></span><span class="cursor-blink">|</span>
+            </span>
+          </h1>
+
+          <p class="hero-description slide-up delay-2">
+            Detail-oriented <strong>Computer Engineering Graduate</strong> & <strong>Full Stack Java Developer</strong>. Skilled in designing robust backend systems with <strong>Java, Spring Boot & Hibernate</strong>, building reactive <strong>React.js & WebSockets</strong> frontends, and optimizing database workflows (MySQL, Oracle SQL).
+          </p>
+
+          <div class="hero-cta slide-up delay-3">
+            <a href="#projects" class="btn btn-primary glow-btn">
+              <i class="fa-solid fa-rocket"></i>
+              <span>View Featured Projects</span>
+            </a>
+            <a href="https://github.com/Sahil192210" target="_blank" rel="noopener" class="btn btn-secondary glass-btn">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sahil-mahajan-3b5302283" target="_blank" rel="noopener" class="btn btn-secondary glass-btn">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-meta slide-up delay-4">
+            <div class="meta-item">
+              <span class="meta-val">Java & Spring</span>
+              <span class="meta-lbl">Core & RESTful APIs</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-val">React.js & WS</span>
+              <span class="meta-lbl">Real-Time WebSockets</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-val">B.Tech (7.05)</span>
+              <span class="meta-lbl">Computer Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO AVATAR CARD WITH 3D TILT & FLOATING BADGES -->
+        <div class="hero-visual slide-up delay-2">
+          <div class="avatar-card" id="avatarCard">
+            <div class="avatar-orbit-ring ring-1"></div>
+            <div class="avatar-orbit-ring ring-2"></div>
+            
+            <div class="avatar-frame">
+              <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='assets/avatar.svg';" alt="Sahil Mahajan - Full Stack Java Engineer" class="profile-photo" id="profilePhoto">
+              <div class="frame-scanline"></div>
+              <div class="frame-corner corner-tl"></div>
+              <div class="frame-corner corner-tr"></div>
+              <div class="frame-corner corner-bl"></div>
+              <div class="frame-corner corner-br"></div>
+            </div>
+
+            <!-- Floating Tech Badges with 3D Float Animation -->
+            <div class="floating-chip chip-java" title="Java Development">
+              <i class="fa-brands fa-java"></i>
+              <span>Java</span>
+            </div>
+
+            <div class="floating-chip chip-spring" title="Spring Boot Framework">
+              <i class="fa-solid fa-leaf"></i>
+              <span>Spring Boot</span>
+            </div>
+
+            <div class="floating-chip chip-kafka" title="React.js Frontend">
+              <i class="fa-brands fa-react"></i>
+              <span>React.js</span>
+            </div>
+
+            <div class="floating-chip chip-docker" title="MySQL Databases">
+              <i class="fa-solid fa-database"></i>
+              <span>MySQL</span>
+            </div>
+
+            <div class="floating-chip chip-redis" title="WebSockets Real-Time">
+              <i class="fa-solid fa-bolt"></i>
+              <span>WebSockets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a href="#about" class="scroll-down-btn" aria-label="Scroll to profile">
+        <span class="mouse-wheel"></span>
+      </a>
+    </section>
+
+    <!-- PROFESSIONAL SUMMARY / ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-code"></i> Engineering Philosophy</span>
+          <h2 class="section-title">Professional Profile</h2>
+          <p class="section-subtitle">
+            Computer Engineering graduate passionate about crafting robust, scalable, and secure full-stack software solutions with modern Java architectures and reactive web frontends.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="card-icon-box">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <h3>Core Java & Backend Architecture</h3>
+            <p>
+              Specializing in object-oriented programming, data structures, and enterprise backend design. Proficient in developing high-throughput services with <strong>Java, Spring Boot, Hibernate</strong>, and clean <strong>RESTful API</strong> microservices.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Hibernate ORM</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon-box">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h3>Full-Stack & Reactive Frontends</h3>
+            <p>
+              Delivering responsive, modern client applications using <strong>React.js</strong> and JavaScript (ES6+). Proficient in real-time bidirectional messaging via <strong>WebSockets (STOMP)</strong> for dynamic, low-latency user interfaces.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">JavaScript (ES6+)</span>
+              <span class="tag">Responsive UI</span>
+            </div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon-box">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>Database Systems & Optimization</h3>
+            <p>
+              Experienced in relational database design, indexing, and query optimization with <strong>MySQL</strong> and <strong>Oracle SQL</strong>. Implementing ACID compliance, JPA repositories, entity mapping, and secure transaction handling.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">Oracle SQL</span>
+              <span class="tag">JPA / Hibernate</span>
+              <span class="tag">Query Tuning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats Banner -->
+        <div class="metrics-container glass-card">
+          <div class="metric-box">
+            <span class="metric-number">B.Tech</span>
+            <span class="metric-label">Computer Engineering (7.05 CGPA)</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">Java</span>
+            <span class="metric-label">Certified Full Stack Developer</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">REST</span>
+            <span class="metric-label">Scalable API Architecture</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-number">React</span>
+            <span class="metric-label">Modern Reactive Frontends</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Engineering Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Production-grade full-stack applications with real-time socket architecture, RESTful services, and robust SQL data layers.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Project Filter Tabs -->
+        <div class="project-tabs-container">
+          <div class="project-tabs">
+            <button class="project-tab-btn active" data-tab="all">
+              <i class="fa-solid fa-layer-group"></i> All Projects (2)
+            </button>
+            <button class="project-tab-btn" data-tab="realtime">
+              <i class="fa-solid fa-bolt"></i> Real-Time Chat & Sockets
+            </button>
+            <button class="project-tab-btn" data-tab="enterprise">
+              <i class="fa-solid fa-store"></i> E-Commerce Platform
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-list">
+          <!-- PROJECT 1: REAL-TIME CHAT APPLICATION -->
+          <article class="project-card glass-card" data-category="realtime">
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-badge badge-green"><i class="fa-solid fa-bolt"></i> Real-Time WebSockets</span>
+                <span class="project-status-pill"><span class="pulse-indicator"></span> Production Ready</span>
+                <span class="project-year">Full Stack</span>
+              </div>
+              <h3 class="project-title">Real-Time Chat & Collaboration Platform</h3>
+              <p class="project-desc">
+                High-performance real-time messaging application supporting multiple concurrent active users with instant bidirectional WebSocket delivery, robust user authentication, and optimized conversation archives.
+              </p>
+              
+              <!-- Metrics counter inside project -->
+              <div class="project-stats-grid">
+                <div class="p-stat-box">
+                  <span class="p-stat-val">&lt; 35ms</span>
+                  <span class="p-stat-lbl">Socket Latency</span>
+                </div>
+                <div class="p-stat-box">
+                  <span class="p-stat-val">100%</span>
+                  <span class="p-stat-lbl">Message Delivery</span>
+                </div>
+                <div class="p-stat-box">
+                  <span class="p-stat-val">Multi-User</span>
+                  <span class="p-stat-lbl">Concurrent Sessions</span>
+                </div>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Supported multiple concurrent active users with sub-50ms message delivery via WebSockets</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Implemented database operations & REST API integrations to ensure smooth data flow</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Optimized database queries and backend architecture for high response speed</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Integrated secure token authentication and strict message sanitization</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="p-tech">Spring Boot</span>
+                <span class="p-tech">WebSockets (STOMP)</span>
+                <span class="p-tech">React.js</span>
+                <span class="p-tech">MySQL</span>
+                <span class="p-tech">REST APIs</span>
+                <span class="p-tech">Hibernate</span>
+              </div>
+
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-project="chat">
+                  <i class="fa-solid fa-sitemap"></i> Project Architecture Specs
+                </button>
+                <a href="https://github.com/Sahil192210" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT VISUAL: WEBSOCKET CONTROLLER CODE & ARCHITECTURE -->
+            <div class="project-visual">
+              <div class="terminal-mockup">
+                <div class="mockup-header">
+                  <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                  <span class="mockup-title">WebSocketChatController.java</span>
+                  <span class="code-lang-tag">Java / STOMP</span>
+                </div>
+                <pre class="mockup-code"><code><span class="c-keyword">@Controller</span>
+<span class="c-class">public class</span> <span class="c-name">WebSocketChatController</span> {
+
+  <span class="c-keyword">@Autowired</span>
+  <span class="c-keyword">private</span> SimpMessagingTemplate messagingTemplate;
+
+  <span class="c-keyword">@MessageMapping</span>(<span class="c-str">"/chat.sendMessage"</span>)
+  <span class="c-keyword">@SendTo</span>(<span class="c-str">"/topic/public"</span>)
+  <span class="c-keyword">public</span> ChatMessage <span class="c-func">sendMessage</span>(<span class="c-keyword">@Payload</span> ChatMessage message) {
+    <span class="c-comment">// Fast bidirectional broadcast across active clients</span>
+    <span class="c-keyword">return</span> messageService.processAndSave(message);
+  }
+}</code></pre>
+                <!-- Visual Socket Connection Pipeline -->
+                <div class="mini-pipeline-flow">
+                  <div class="flow-pill"><i class="fa-brands fa-react"></i> React Client</div>
+                  <i class="fa-solid fa-arrow-right flow-arr"></i>
+                  <div class="flow-pill"><i class="fa-solid fa-bolt"></i> WSS Handshake</div>
+                  <i class="fa-solid fa-arrow-right flow-arr"></i>
+                  <div class="flow-pill"><i class="fa-solid fa-leaf"></i> STOMP Broker</div>
+                  <i class="fa-solid fa-arrow-right flow-arr"></i>
+                  <div class="flow-pill"><i class="fa-solid fa-database"></i> MySQL History</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: E-COMMERCE PLATFORM -->
+          <article class="project-card glass-card reverse-layout" data-category="enterprise">
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-badge badge-purple"><i class="fa-solid fa-cart-shopping"></i> E-Commerce Platform</span>
+                <span class="project-status-pill"><span class="pulse-indicator"></span> Full Stack Architecture</span>
+                <span class="project-year">Enterprise Ready</span>
+              </div>
+              <h3 class="project-title">Secure E-Commerce Platform & Order Management</h3>
+              <p class="project-desc">
+                Comprehensive e-commerce platform built with Spring Boot, Hibernate, React.js, and MySQL. Features secure user authentication, catalog management, transactional cart workflows, and automated inventory sync.
+              </p>
+
+              <div class="project-stats-grid">
+                <div class="p-stat-box">
+                  <span class="p-stat-val">100%</span>
+                  <span class="p-stat-lbl">ACID Compliance</span>
+                </div>
+                <div class="p-stat-box">
+                  <span class="p-stat-val">Role-Based</span>
+                  <span class="p-stat-lbl">RBAC Security</span>
+                </div>
+                <div class="p-stat-box">
+                  <span class="p-stat-val">RESTful</span>
+                  <span class="p-stat-lbl">API Design</span>
+                </div>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Built a secure e-commerce platform with authentication and inventory management functionalities</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Managed backend operations, database handling, and API services for smooth transaction workflows</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Applied role-based authentication and validation mechanisms to improve data security</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Integrated frontend and backend services to provide a smooth user and transaction experience</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="p-tech">Java</span>
+                <span class="p-tech">Spring Boot</span>
+                <span class="p-tech">Hibernate ORM</span>
+                <span class="p-tech">React.js</span>
+                <span class="p-tech">MySQL</span>
+                <span class="p-tech">REST APIs</span>
+              </div>
+
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-project="ecommerce">
+                  <i class="fa-solid fa-sitemap"></i> Project Architecture Specs
+                </button>
+                <a href="https://github.com/Sahil192210" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <div class="terminal-mockup">
+                <div class="mockup-header">
+                  <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                  <span class="mockup-title">OrderProcessingService.java</span>
+                  <span class="code-lang-tag">Java / Spring</span>
+                </div>
+                <pre class="mockup-code"><code><span class="c-keyword">@Service</span>
+<span class="c-keyword">@Transactional</span>
+<span class="c-class">public class</span> <span class="c-name">OrderProcessingService</span> {
+  <span class="c-keyword">@Autowired</span>
+  <span class="c-keyword">private</span> OrderRepository orderRepo;
+  <span class="c-keyword">@Autowired</span>
+  <span class="c-keyword">private</span> InventoryService inventoryService;
+
+  <span class="c-keyword">public</span> Order <span class="c-func">processCheckout</span>(OrderDto orderDto) {
+    <span class="c-comment">// Validate inventory availability</span>
+    inventoryService.reserveItems(orderDto.getItems());
+    Order order = <span class="c-keyword">new</span> Order(orderDto);
+    order.setStatus(OrderStatus.CONFIRMED);
+    <span class="c-keyword">return</span> orderRepo.save(order);
+  }
+}</code></pre>
+                <!-- Visual Checkout Pipeline Flow -->
+                <div class="mini-pipeline-flow">
+                  <div class="flow-pill"><i class="fa-solid fa-cart-shopping"></i> Cart Checkout</div>
+                  <i class="fa-solid fa-arrow-right flow-arr"></i>
+                  <div class="flow-pill"><i class="fa-solid fa-shield-check"></i> Auth & Validate</div>
+                  <i class="fa-solid fa-arrow-right flow-arr"></i>
+                  <div class="flow-pill"><i class="fa-solid fa-boxes-stacked"></i> Inventory Deduct</div>
+                  <i class="fa-solid fa-arrow-right flow-arr"></i>
+                  <div class="flow-pill"><i class="fa-solid fa-receipt"></i> MySQL Commit</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM DESIGN & ARCHITECTURE FLOW -->
+    <section class="section architecture-section" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-network-wired"></i> Full Stack Pipeline</span>
+          <h2 class="section-title">Full Stack Architecture Flow</h2>
+          <p class="section-subtitle">
+            Interactive visualization of how requests navigate from the React client to Spring Boot services and SQL databases.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Interactive Architecture Controls -->
+        <div class="flow-actions">
+          <button class="btn btn-primary pulse-btn" id="simulateBtn">
+            <i class="fa-solid fa-play"></i>
+            <span>Simulate Request / Socket Flow</span>
+          </button>
+          <button class="btn btn-secondary" id="resetFlowBtn">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+            <span>Reset Flow</span>
+          </button>
+          <span class="flow-status-text" id="flowStatusText">Pipeline Ready. Click simulate to start packet trace.</span>
+        </div>
+
+        <!-- Interactive 4-Tier Pipeline Container -->
+        <div class="pipeline-grid" id="pipelineGrid">
+          <!-- Step 1 -->
+          <div class="pipeline-node node-step-1" id="nodeStep1" data-step="1">
+            <div class="node-header">
+              <span class="node-step-badge">01</span>
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h4>1. Client View</h4>
+            <div class="node-meta">React.js & WebSockets</div>
+            <p>Responsive user interface initiating secure REST calls and bidirectional socket connections.</p>
+            <div class="node-tags">
+              <span>React.js</span>
+              <span>WebSockets</span>
+              <span>REST Calls</span>
+            </div>
+            <div class="node-activity-indicator" id="indicator1"></div>
+          </div>
+
+          <!-- Connector 1-2 -->
+          <div class="pipeline-connector" id="connector1">
+            <div class="stream-line"></div>
+            <div class="packet-particle" id="packet1"></div>
+            <span class="connector-label">HTTPS / WSS</span>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="pipeline-node node-step-2" id="nodeStep2" data-step="2">
+            <div class="node-header">
+              <span class="node-step-badge">02</span>
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4>2. Auth & Validation</h4>
+            <div class="node-meta">Spring Security & REST</div>
+            <p>Role-based authentication, request payload validation, and controller routing.</p>
+            <div class="node-tags">
+              <span>Authentication</span>
+              <span>Validation</span>
+              <span>CORS</span>
+            </div>
+            <div class="node-activity-indicator" id="indicator2"></div>
+          </div>
+
+          <!-- Connector 2-3 -->
+          <div class="pipeline-connector" id="connector2">
+            <div class="stream-line"></div>
+            <div class="packet-particle" id="packet2"></div>
+            <span class="connector-label">Service Logic</span>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="pipeline-node node-step-3" id="nodeStep3" data-step="3">
+            <div class="node-header">
+              <span class="node-step-badge">03</span>
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h4>3. Spring Boot Backend</h4>
+            <div class="node-meta">Services & Transactions</div>
+            <p>Business logic processing, WebSocket handlers, and Hibernate ORM entity management.</p>
+            <div class="node-tags">
+              <span>Spring Boot</span>
+              <span>Hibernate</span>
+              <span>Transactions</span>
+            </div>
+            <div class="node-activity-indicator" id="indicator3"></div>
+          </div>
+
+          <!-- Connector 3-4 -->
+          <div class="pipeline-connector" id="connector3">
+            <div class="stream-line"></div>
+            <div class="packet-particle" id="packet3"></div>
+            <span class="connector-label">JDBC / Query</span>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="pipeline-node node-step-4" id="nodeStep4" data-step="4">
+            <div class="node-header">
+              <span class="node-step-badge">04</span>
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h4>4. Database Layer</h4>
+            <div class="node-meta">MySQL & Oracle SQL</div>
+            <p>Relational data storage, optimized index queries, and transactional integrity.</p>
+            <div class="node-tags">
+              <span>MySQL</span>
+              <span>Oracle SQL</span>
+              <span>ACID</span>
+            </div>
+            <div class="node-activity-indicator" id="indicator4"></div>
+          </div>
+        </div>
+
+        <!-- Terminal Log Viewer -->
+        <div class="pipeline-terminal glass-card">
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="term-btn term-red"></span>
+              <span class="term-btn term-yellow"></span>
+              <span class="term-btn term-green"></span>
+            </div>
+            <span class="terminal-title">sahil-architecture-stream.log</span>
+            <span class="terminal-live-badge"><i class="fa-solid fa-circle"></i> LIVE TRACE</span>
+          </div>
+          <div class="terminal-body" id="terminalLog">
+            <div class="term-line"><span class="term-timestamp">[SYSTEM INIT]</span> Application architecture monitoring initialized. Ready for simulation...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL & PROFESSIONAL SKILLS MATRIX -->
+    <section class="section stack-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-cubes-stacked"></i> Core Competencies</span>
+          <h2 class="section-title">Technical & Professional Skills</h2>
+          <p class="section-subtitle">A balanced blend of modern backend engineering, web development, and operational skills.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Tech Domain Filter Tabs -->
+        <div class="stack-filters">
+          <button class="filter-btn active" data-filter="all">All Competencies</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="frameworks">Frameworks & Web</button>
+          <button class="filter-btn" data-filter="databases">Databases</button>
+          <button class="filter-btn" data-filter="operations">Operations & Data</button>
+        </div>
+
+        <div class="stack-grid">
+          <!-- DOMAIN 1: PROGRAMMING -->
+          <div class="stack-card glass-card" data-category="programming">
+            <div class="stack-card-header">
+              <div class="domain-icon java-icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div>
+                <span class="domain-subtitle">Core Languages</span>
+                <h3 class="domain-title">Programming</h3>
+              </div>
+            </div>
+            <p class="domain-desc">
+              Strong foundation in object-oriented programming, data structures, and algorithmic logic.
+            </p>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level">Core Java, OOP, Collections, Multithreading</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 95%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level">Complex Queries, Joins, Aggregations, Indexing</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 90%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level">Async/Await, DOM manipulation, REST integration</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 85%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C++ & C</span>
+                  <span class="skill-level">Procedural programming, Memory concepts</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 80%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- DOMAIN 2: FRAMEWORKS & WEB -->
+          <div class="stack-card glass-card" data-category="frameworks">
+            <div class="stack-card-header">
+              <div class="domain-icon web-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <span class="domain-subtitle">Web & Application</span>
+                <h3 class="domain-title">Frameworks & Web</h3>
+              </div>
+            </div>
+            <p class="domain-desc">
+              Building enterprise-ready web applications with Spring ecosystems and reactive frontends.
+            </p>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Spring Boot</span>
+                  <span class="skill-level">RESTful APIs, Dependency Injection, MVC</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 92%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Hibernate (ORM)</span>
+                  <span class="skill-level">Entity mapping, JPA, Session Management</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 88%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">WebSockets</span>
+                  <span class="skill-level">Real-Time bidirectional event communication</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 87%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">React.js</span>
+                  <span class="skill-level">Functional components, Hooks, State management</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 84%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- DOMAIN 3: DATABASES -->
+          <div class="stack-card glass-card" data-category="databases">
+            <div class="stack-card-header">
+              <div class="domain-icon db-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div>
+                <span class="domain-subtitle">Persistence Layer</span>
+                <h3 class="domain-title">Databases</h3>
+              </div>
+            </div>
+            <p class="domain-desc">
+              Designing relational database schemas, handling transactions, and maintaining data integrity.
+            </p>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level">Schema design, Triggers, Views, Query optimization</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 90%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Oracle SQL</span>
+                  <span class="skill-level">Enterprise relational database operations</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 85%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Validation & Handling</span>
+                  <span class="skill-level">Integrity constraints, Error checking</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 92%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- DOMAIN 4: OPERATIONS & TOOLS -->
+          <div class="stack-card glass-card" data-category="operations">
+            <div class="stack-card-header">
+              <div class="domain-icon devops-icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div>
+                <span class="domain-subtitle">Operations & Productivity</span>
+                <h3 class="domain-title">Office & Operations</h3>
+              </div>
+            </div>
+            <p class="domain-desc">
+              Strong operational acumen, banking workflow understanding, client support, and data handling.
+            </p>
+            <ul class="skill-items">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MS Excel & Data Handling</span>
+                  <span class="skill-level">Formulas, Validation, Reporting, Documentation</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 93%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub, Postman</span>
+                  <span class="skill-level">Version control, API testing, Collaboration</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 88%;"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Customer & Banking Operations</span>
+                  <span class="skill-level">Query resolution, Active listening, Workflows</span>
+                </div>
+                <div class="skill-progress"><div class="progress-bar" style="--width: 90%;"></div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Qualifications</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-grid">
+          <!-- EDUCATION COLUMN -->
+          <div class="edu-column">
+            <h3 class="column-title"><i class="fa-solid fa-building-columns"></i> Academic Background</h3>
+            
+            <div class="timeline">
+              <div class="timeline-item glass-card">
+                <span class="timeline-badge">2022 – 2026</span>
+                <h4>Bachelor of Technology in Computer Engineering</h4>
+                <p class="timeline-institution">GH Raisoni College of Engineering and Management, Jalgaon</p>
+                <div class="timeline-grade"><strong>CGPA: 7.05</strong></div>
+                <p class="timeline-details">Specialized in software engineering principles, database systems, object-oriented programming, and computer networks.</p>
+              </div>
+
+              <div class="timeline-item glass-card">
+                <span class="timeline-badge">2021 – 2022</span>
+                <h4>Higher Secondary Certificate (HSC)</h4>
+                <p class="timeline-institution">D.D.S.P. College, Erandol</p>
+                <div class="timeline-grade"><strong>Score: 77.67%</strong></div>
+              </div>
+
+              <div class="timeline-item glass-card">
+                <span class="timeline-badge">2019 – 2020</span>
+                <h4>Secondary School Certificate (SSC)</h4>
+                <p class="timeline-institution">Atma Malik International School</p>
+                <div class="timeline-grade"><strong>Score: 94.20%</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CERTIFICATIONS COLUMN -->
+          <div class="cert-column">
+            <h3 class="column-title"><i class="fa-solid fa-certificate"></i> Professional Certifications</h3>
+            
+            <div class="cert-list">
+              <div class="cert-card glass-card">
+                <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+                <div class="cert-info">
+                  <h4>Full Stack Java Development</h4>
+                  <p class="cert-issuer">Full Stack Guru IT Solutions, Pune</p>
+                  <span class="cert-tag">Java • Spring Boot • Hibernate • Full Stack</span>
+                </div>
+              </div>
+
+              <div class="cert-card glass-card">
+                <div class="cert-icon"><i class="fa-solid fa-file-excel"></i></div>
+                <div class="cert-info">
+                  <h4>MS Excel and Data Handling Basics</h4>
+                  <p class="cert-issuer">Professional Training</p>
+                  <span class="cert-tag">Data Validation • Analysis • Reporting</span>
+                </div>
+              </div>
+
+              <div class="cert-card glass-card">
+                <div class="cert-icon"><i class="fa-solid fa-headset"></i></div>
+                <div class="cert-info">
+                  <h4>Customer Service Fundamentals</h4>
+                  <p class="cert-issuer">Professional Certification</p>
+                  <span class="cert-tag">Client Support • Issue Resolution</span>
+                </div>
+              </div>
+
+              <div class="cert-card glass-card">
+                <div class="cert-icon"><i class="fa-solid fa-landmark"></i></div>
+                <div class="cert-info">
+                  <h4>Banking Operations & Customer Service</h4>
+                  <p class="cert-issuer">Operational Certification</p>
+                  <span class="cert-tag">Banking Workflows • Transactions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURAL SPECS MODAL -->
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal-card glass-card" id="modalCard">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+        <div id="modalBody">
+          <!-- Dynamic content loaded via JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT & CONNECT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-terminal"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Work Together</h2>
+          <p class="section-subtitle">
+            Open for Full-Time Software Engineering Roles, Java Developer Positions, and Technical Opportunities.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card glass-card">
+            <h3>Direct Contact Channels</h3>
+            <p>Feel free to reach out directly via email, phone, or LinkedIn for job opportunities or project discussions.</p>
+
+            <div class="contact-links">
+              <a href="mailto:mahajansahil0455@gmail.com" class="contact-item" id="copyEmailLink">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-detail">
+                  <span class="label">Email Address</span>
+                  <span class="value">mahajansahil0455@gmail.com</span>
+                </div>
+                <i class="fa-regular fa-copy copy-icon" title="Copy email"></i>
+              </a>
+
+              <a href="tel:+918262033452" class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-detail">
+                  <span class="label">Phone / WhatsApp</span>
+                  <span class="value">+91 8262033452</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square copy-icon"></i>
+              </a>
+
+              <a href="https://github.com/Sahil192210" target="_blank" rel="noopener" class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="contact-detail">
+                  <span class="label">GitHub Profile</span>
+                  <span class="value">github.com/Sahil192210</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square copy-icon"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/sahil-mahajan-3b5302283" target="_blank" rel="noopener" class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="contact-detail">
+                  <span class="label">LinkedIn Profile</span>
+                  <span class="value">linkedin.com/in/sahil-mahajan-3b5302283</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square copy-icon"></i>
+              </a>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-detail">
+                  <span class="label">Location</span>
+                  <span class="value">Pune, Maharashtra, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Dispatch Form -->
+          <div class="contact-form-card glass-card">
+            <h3>Send an Enquiry</h3>
+            <p style="font-size: 0.88rem; color: var(--text-dim); margin-bottom: 1.25rem;">
+              Fill in your details below. Your message will be sent directly to Sahil's inbox.
+            </p>
+            <form id="contactForm" class="contact-form" action="https://formsubmit.co/ajax/mahajansahil0455@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New Portfolio Enquiry for Sahil Mahajan">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="form-group">
+                <label for="name">Your Name / Organization <span style="color: var(--neon-cyan)">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="e.g. Rahul Sharma (Hiring Manager)">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email Address <span style="color: var(--neon-cyan)">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="rahul@company.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number (Optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+              </div>
+
+              <div class="form-group">
+                <label for="topic">Enquiry Category</label>
+                <select id="topic" name="category">
+                  <option value="Java Full Stack Opportunity">Job Opportunity - Full Stack Java Developer</option>
+                  <option value="Software Engineer Trainee">Software Engineer / Graduate Role</option>
+                  <option value="Web Development Project">Web Development / Freelance Project</option>
+                  <option value="General Technical Inquiry">General Technical Discussion</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message / Requirements <span style="color: var(--neon-cyan)">*</span></label>
+                <textarea id="message" name="message" rows="4" required placeholder="Describe your job opportunity, project requirements, or enquiry..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block glow-btn" id="sendBtn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span id="btnText">Send Enquiry</span>
+              </button>
+
+              <div class="form-feedback" id="formFeedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">SahilMahajan</span>
+          <span class="logo-slash">/&gt;</span>
+        </a>
+        <p>Computer Engineering Graduate • Full Stack Java Developer • Pune</p>
+      </div>
+
+      <div class="footer-center">
+        <span>Crafted with pure HTML5, Modern CSS3 & Vanilla JavaScript</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://github.com/Sahil192210" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sahil-mahajan-3b5302283" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:mahajansahil0455@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+918262033452" class="social-btn" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="#hero" class="social-btn back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

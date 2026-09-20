@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" stroke="url(#neonGlow)" stroke-width="3" filter="url(#glow)" />
+  
+  <!-- Subtle Matrix grid lines in circle -->
+  <path d="M 50 140 L 350 140 M 50 200 L 350 200 M 50 260 L 350 260" stroke="#38bdf8" stroke-width="0.75" stroke-opacity="0.2" stroke-dasharray="6,6" />
+  <path d="M 140 50 L 140 350 M 200 50 L 200 350 M 260 50 L 260 350" stroke="#38bdf8" stroke-width="0.75" stroke-opacity="0.2" stroke-dasharray="6,6" />
+
+  <!-- Neon Silhouette Head & Shoulders -->
+  <g transform="translate(0, 10)">
+    <!-- Shoulders / Cyber Suit -->
+    <path d="M 110 320 C 110 260, 150 240, 200 240 C 250 240, 290 260, 290 320 Z" fill="#1e293b" stroke="url(#accentGlow)" stroke-width="3" />
+    <path d="M 160 250 L 200 280 L 240 250" stroke="#00f2fe" stroke-width="2.5" fill="none" opacity="0.8" />
+    <path d="M 200 280 L 200 330" stroke="#00f2fe" stroke-width="2" opacity="0.6" />
+
+    <!-- Neck -->
+    <rect x="180" y="195" width="40" height="40" rx="8" fill="#334155" />
+
+    <!-- Face Silhouette -->
+    <ellipse cx="200" cy="155" rx="52" ry="62" fill="#1e293b" stroke="url(#neonGlow)" stroke-width="2.5" />
+
+    <!-- Stylized Cyber Glasses / Visor -->
+    <path d="M 165 145 Q 200 155 235 145 L 232 165 Q 200 175 168 165 Z" fill="url(#neonGlow)" filter="url(#glow)" opacity="0.95" />
+    <line x1="172" y1="155" x2="228" y2="155" stroke="#ffffff" stroke-width="1.5" opacity="0.8" />
+
+    <!-- Sleek Tech Hair -->
+    <path d="M 148 145 C 145 105, 175 90, 200 90 C 235 90, 255 108, 252 145 C 240 120, 215 110, 195 110 C 170 110, 155 125, 148 145 Z" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" />
+  </g>
+
+  <!-- Orbital Ring Node Accents -->
+  <circle cx="90" cy="110" r="5" fill="#00f2fe" filter="url(#glow)" />
+  <circle cx="310" cy="270" r="6" fill="#ec4899" filter="url(#glow)" />
+  <circle cx="320" cy="120" r="4" fill="#a855f7" />
+  <circle cx="80" cy="260" r="4" fill="#10b981" />
+
+  <!-- Architect Code Symbols -->
+  <text x="75" y="85" fill="#38bdf8" font-family="monospace" font-size="14" opacity="0.6">&lt;Java21 /&gt;</text>
+  <text x="260" y="325" fill="#a855f7" font-family="monospace" font-size="13" opacity="0.6">&lt;Spring/&gt;</text>
+</svg>
