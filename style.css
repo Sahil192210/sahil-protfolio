@@ -1392,6 +1392,15 @@ body {
   gap: 3rem;
   padding: 2.75rem;
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.project-content,
+.project-visual {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .project-card.reverse-layout {
@@ -1447,6 +1456,8 @@ body {
   font-size: 1.8rem;
   color: #fff;
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .project-desc {
@@ -1454,6 +1465,8 @@ body {
   font-size: 0.98rem;
   margin-bottom: 1.5rem;
   line-height: 1.65;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .project-highlights {
@@ -1461,6 +1474,7 @@ body {
   flex-direction: column;
   gap: 0.65rem;
   margin-bottom: 1.75rem;
+  width: 100%;
 }
 
 .highlight-item {
@@ -1469,6 +1483,14 @@ body {
   gap: 0.65rem;
   font-size: 0.88rem;
   color: #cbd5e1;
+  width: 100%;
+}
+
+.highlight-item span {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .highlight-item i {
@@ -1890,15 +1912,15 @@ body {
   justify-content: center;
   margin-bottom: 3rem;
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .project-tabs {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.65rem;
   background: rgba(12, 18, 36, 0.75);
   border: 1px solid var(--border-glass);
-  padding: 0.4rem;
+  padding: 0.45rem;
   border-radius: 50px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -1906,10 +1928,11 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-tab-btn {
-  padding: 0.6rem 1.4rem;
+  padding: 0.65rem 1.35rem;
   border-radius: 40px;
   background: transparent;
   border: 1px solid transparent;
@@ -1921,11 +1944,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.55rem;
+  gap: 0.5rem;
   transition: all var(--transition-fast);
   white-space: nowrap;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  text-align: center;
 }
 
 .project-tab-btn:hover {
@@ -2521,6 +2545,9 @@ body {
   .project-card, .project-card.reverse-layout {
     grid-template-columns: 1fr;
     gap: 2rem;
+    width: 100%;
+    min-width: 0;
+    padding: 2rem;
   }
 
   .project-card.reverse-layout .project-content {
@@ -2781,18 +2808,41 @@ body {
 
   /* Projects Section */
   .project-card {
-    padding: 1.5rem;
+    padding: 1.5rem 1.25rem;
     border-radius: 14px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .project-content,
+  .project-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
   }
 
   .project-title {
     font-size: 1.4rem;
+    line-height: 1.35;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .project-tabs-container {
     margin-bottom: 2rem;
-    padding: 0;
+    padding: 0 0.5rem;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .project-tabs {
@@ -2803,6 +2853,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    box-sizing: border-box;
   }
 
   .project-tab-btn {
@@ -2812,48 +2863,101 @@ body {
     padding: 0.65rem 0.9rem;
     font-size: 0.82rem;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .project-tab-btn[data-tab="all"] {
     flex: 1 1 100%;
   }
 
-  .project-stats-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+  .project-meta-row {
+    flex-wrap: wrap;
     gap: 0.5rem;
   }
 
+  .project-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .p-stat-box {
-    padding: 0.5rem 0.4rem;
+    padding: 0.55rem 0.4rem;
+    min-width: 0;
+    box-sizing: border-box;
   }
 
   .p-stat-val {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .p-stat-lbl {
+    font-size: 0.64rem;
+    letter-spacing: 0.3px;
+    overflow-wrap: break-word;
+  }
+
+  .highlight-item {
+    font-size: 0.84rem;
+    gap: 0.55rem;
+  }
+
+  .project-tech-stack {
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .p-tech {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.55rem;
   }
 
   .project-links {
     flex-direction: column;
     align-items: stretch;
     gap: 0.65rem;
+    width: 100%;
   }
 
   .project-links .btn {
     width: 100%;
+    justify-content: center;
+  }
+
+  .terminal-mockup {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .mockup-header {
+    padding: 0.5rem 0.85rem;
+    flex-wrap: wrap;
   }
 
   .mockup-code {
-    padding: 1rem;
+    padding: 0.85rem;
     font-size: 0.72rem;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .mini-pipeline-flow {
     padding: 0.65rem 0.5rem;
     gap: 0.35rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .flow-pill {
-    font-size: 0.62rem;
-    padding: 0.2rem 0.4rem;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.45rem;
   }
 
   /* Architecture Section */
@@ -3009,10 +3113,24 @@ body {
     font-size: 0.65rem;
   }
 
+  .project-card {
+    padding: 1.15rem 0.85rem;
+    border-radius: 12px;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .project-desc {
+    font-size: 0.88rem;
+  }
+
   .project-tabs {
     border-radius: 12px;
     padding: 0.35rem;
     gap: 0.4rem;
+    width: 100%;
   }
 
   .project-tab-btn {
@@ -3022,31 +3140,51 @@ body {
     font-size: 0.8rem;
     border-radius: 8px;
     justify-content: center;
+    white-space: normal;
+    text-align: center;
   }
 
   .project-meta-row {
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
+  }
+
+  .project-badge,
+  .project-status-pill,
+  .project-year {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
   }
 
   .project-stats-grid {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 0.45rem;
+    width: 100%;
   }
 
   .p-stat-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 0.85rem;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .p-stat-val {
     order: 2;
+    font-size: 0.95rem;
+    text-align: right;
   }
 
   .p-stat-lbl {
     order: 1;
+    font-size: 0.68rem;
+    text-align: left;
+  }
+
+  .highlight-item {
+    font-size: 0.82rem;
   }
 
   .skill-info {
@@ -3080,9 +3218,38 @@ body {
     font-size: 1.65rem;
   }
 
+  .project-card {
+    padding: 0.95rem 0.65rem;
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+  }
+
+  .project-desc {
+    font-size: 0.84rem;
+  }
+
   .project-tab-btn {
     font-size: 0.76rem;
     padding: 0.55rem 0.6rem;
     gap: 0.4rem;
+    white-space: normal;
+  }
+
+  .highlight-item {
+    font-size: 0.78rem;
+  }
+
+  .p-stat-box {
+    padding: 0.45rem 0.6rem;
+  }
+
+  .p-stat-val {
+    font-size: 0.85rem;
+  }
+
+  .p-stat-lbl {
+    font-size: 0.62rem;
   }
 }
